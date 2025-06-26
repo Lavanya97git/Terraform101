@@ -10,9 +10,10 @@ terraform {
 provider "aws" {
   # Configuration options
   region = "ap-south-1"
-  access_key = "AKIAxxxxxxxxxxxx"
-  secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
+
 resource "aws_instance" "provinAWSins" {
   ami = "ami-021a584b49225376d"
   instance_type = "t2.micro"
