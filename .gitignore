@@ -1,0 +1,6 @@
+mysecret.auto.tfvars
+.terraform
+*.tfstate
+*.tfstate.*
+*.tfvars.json
+*.tfvars
